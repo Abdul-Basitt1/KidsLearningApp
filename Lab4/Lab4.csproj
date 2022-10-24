@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F758571F-F87B-4097-BABF-6D964290A9CD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Lab4</RootNamespace>
+    <AssemblyName>Lab4</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BirdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BirdForm.Designer.cs">
+      <DependentUpon>BirdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnimalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnimalForm.Designer.cs">
+      <DependentUpon>AnimalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColorForm.Designer.cs">
+      <DependentUpon>ColorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BirdForm.resx">
+      <DependentUpon>BirdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimalForm.resx">
+      <DependentUpon>AnimalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorForm.resx">
+      <DependentUpon>ColorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kidsappbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty-wooden-board-.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\original.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wolf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whale.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monkey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-animal-shelter-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-woodpecker-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paint-palette-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-animal-shelter-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animalmainbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-to-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-next-page-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clouds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sparrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sparrow1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pigeon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kingfisher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eagle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\owll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parrot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skybg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parrot1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kingfisher1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skypurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skybrg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camel %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monkey %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bear %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monkey %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bear %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorchart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorcards.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colormix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow_23 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icebluebird.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bomb.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
